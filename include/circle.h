@@ -1,29 +1,35 @@
 // Copyright 2024 Ekaterina Kistrimova
 #ifndef INCLUDE_CIRCLE_H_
 #define INCLUDE_CIRCLE_H_
+
 #include <cstdint>
 #include <cmath>
 
 class Circle {
-private:
+ private:
     double radius;
     double area;
     double ference;
     const double PI = 3.14159;
 
-public:
+ public:
     explicit Circle(double radius);
 
     double getRadius() const;
+
     double getArea() const;
+
     double getFerence() const;
 
     void setRadius(double radius);
+
     void setArea(double area);
+
     void setFerence(double ference);
 
-private:
+ private:
     void calculateArea();
+
     void calculateFerence();
 };
 
