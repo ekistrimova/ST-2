@@ -120,5 +120,4 @@ TEST(Tasks, swimmingPoolSolve) {
             solveSwimmingPoolTask(3.0, 1.0, 1000, 2000),
             23000 * PI,
             EPS);
-}
-    
+}  
