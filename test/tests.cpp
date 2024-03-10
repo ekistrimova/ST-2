@@ -26,7 +26,7 @@ TEST(Circle, checkGettingArea) {
 
 TEST(Circle, checkGettingFerence) {
     auto test = Circle(1.0);
-    EXPECT_NEAR(test.getArea(), 2 * PI, EPS);
+    EXPECT_NEAR(test.getFerence(), 2 * PI, EPS);
 }
 
 TEST(Circle, checkSettingPositiveRadius) {
@@ -112,7 +112,7 @@ TEST(Tasks, planetAndRopeSolve) {
 }
 
 TEST(Tasks, littleDataPlanetAndRopeSolve) {
-    EXPECT_NEAR(solvePlanetAndRopeTask(1.0, 1.0), 1 + M_1_PI * 0.5, EPS);
+    EXPECT_NEAR(solvePlanetAndRopeTask(1.0, 1.0), M_1_PI * 0.5, EPS);
 }
 
 TEST(Tasks, swimmingPoolSolve) {
@@ -121,6 +121,4 @@ TEST(Tasks, swimmingPoolSolve) {
             23000 * PI,
             EPS);
 }
-
-
-
+    
